@@ -27,17 +27,7 @@ mongoConfigs.connect(function (err) {
 });
 
 app.get('/', function (req, res) {
-    res.render('index',
-        //data to be passed to the view
-        {
-            data: {
-                messengerRoute: messengerRoute,
-                resultSelector: resultSelector,
-                textboxSelector: textboxSelector,
-                textboxId: textboxId,
-                defaultMessage: defaultMessage
-            }
-        });
+    res.render('index');
 });
 
 app.post(messengerRoute, jsonParser, function (req, res) {
@@ -49,4 +39,20 @@ app.post(messengerRoute, jsonParser, function (req, res) {
         res.status(200).send({data: 'OK'});
 
     });
+});
+
+app.get('/support', function (req, res) {
+    res.render('support');
+});
+
+app.get('/tickets', function (req, res) {
+    res.render('tickets');
+});
+
+app.get('/faq', function (req, res) {
+    res.render('faq');
+});
+
+app.get('/login', function (req, res) {
+    res.render('login');
 });
