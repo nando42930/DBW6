@@ -2,8 +2,31 @@
 <html>
 <body>
     <%- include('./partials/header.ejs') %>
-    <div class="container">
+    <div class="container text-center">
+        <h1>Perguntas Frequentes</h1>
+        <div class="btn-group">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categorias <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Categoria 1</a></li>
+                <li><a href="#">Categoria 2</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <i class="bi bi-person-circle"></i>
+            <p>Hello. How are you today?</p>
+            <span class="time-right">11:00</span>
+        </div>
 
+        <div class="container darker">
+            <i class="bi bi-person-circle"></i>
+            <p>Hey! I'm fine. Thanks for asking!</p>
+            <span class="time-left">11:01</span>
+        </div>
+        <button class="btn btn-lg" style="border: solid" type="button">
+            Criar Pergunta
+        </button>
     </div>
     <%- include('./partials/footer.ejs') %>
 </body>

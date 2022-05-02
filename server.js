@@ -56,3 +56,35 @@ app.get('/faq', function (req, res) {
 app.get('/login', function (req, res) {
     res.render('login');
 });
+
+app.get('/answerTicket', function (req, res) {
+    res.render('answerTicket');
+});
+
+app.get('/chatSupport', function (req, res) {
+    res.render('chatSupport');
+});
+
+app.get('/checkTicket', function (req, res) {
+    res.render('checkTicket');
+});
+
+app.get('/newFAQ', function (req, res) {
+    res.render('newFAQ');
+});
+
+app.get('/newSupport', function (req, res) {
+    res.render('newSupport');
+});
+
+app.get('/newTicket', function (req, res) {
+    res.render('newTicket');
+});
+
+app.get('/register', function (req, res) {
+    res.render('register');
+});
+
+app.get('/ticket', function (req, res) {
+    res.render('ticket');
+});

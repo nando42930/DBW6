@@ -2,8 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="views">
+      <change afterPath="$PROJECT_DIR$/.idea/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/answerTicket.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/chatSupport.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/checkTicket.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/newFAQ.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/newSupport.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/newTicket.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/register.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/ticket.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wave.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/head.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ejs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ejs.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/ejs.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jake" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jake.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jake.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/lib/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/support/sync-package-managers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/bin/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/bin/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/jakefile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/jakefile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/usage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/usage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/filelist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/filelist/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/filelist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/filelist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/filelist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/filelist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/filelist/jakefile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/filelist/jakefile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/filelist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/filelist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/bin/bash_completion.sh" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/bin/bash_completion.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/bin/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/bin/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/jakefile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/jakefile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/jake.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/jake.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/namespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/namespace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/package_task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/package_task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/parseargs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/parseargs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/program.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/program.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/publish_task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/publish_task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/task/directory_task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/task/directory_task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/task/file_task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/task/file_task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/task/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/task/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/task/task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/task/task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/test_task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/test_task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/utils/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/utils/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/lib/utils/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/lib/utils/logger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/concurrent.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/concurrent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/file_task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/file_task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/jakefile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/jakefile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/concurrent.jake.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/concurrent.jake.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/publish.jake.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/publish.jake.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/required_module.jake.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/required_module.jake.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/rule.jake.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/jakelib/rule.jake.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/publish_task.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/publish_task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/selfdep.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/selfdep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/integration/task_base.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/integration/task_base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/unit/jakefile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/unit/jakefile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/unit/namespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/unit/namespace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/test/unit/parseargs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/test/unit/parseargs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jake/usage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jake/usage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/faq.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tickets.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/tickets.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,16 +104,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28ULFcsHHKdPFOOVK0LicWG3lzq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/[2022] P8 - Mongodb + autenticação" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -40,6 +133,11 @@
       <workItem from="1651266117369" duration="124000" />
       <workItem from="1651266295129" duration="961000" />
       <workItem from="1651332162060" duration="22491000" />
+      <workItem from="1651374526556" duration="1988000" />
+      <workItem from="1651376660935" duration="8951000" />
+      <workItem from="1651426709700" duration="3194000" />
+      <workItem from="1651452182139" duration="15278000" />
+      <workItem from="1651510754418" duration="5138000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1651266335179</created>
@@ -55,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651373508480</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="views">
+      <created>1651374946233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651374946233</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +178,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="views" />
     <option name="LAST_COMMIT_MESSAGE" value="views" />
