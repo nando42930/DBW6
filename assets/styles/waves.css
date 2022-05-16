@@ -1,0 +1,46 @@
+.wave {
+    animation: wave 5s linear infinite;
+    opacity: .8;
+}
+.wave1 {
+    animation: wave1 4s linear infinite;
+    opacity: .6;
+}
+.wave2 {
+    animation: wave2 3s linear infinite;
+    opacity: .4;
+}
+@keyframes wave {
+    0% {
+        transform: scaleY(.4) translateX(0%);
+    }
+    100% {
+        transform: scaleY(.4) translateX(100%);
+    }
+}
+@keyframes wave1 {
+    0% {
+        transform: scaleY(.5) translateX(100%);
+    }
+    100% {
+        transform: scaleY(.5) translateX(0%);
+    }
+}
+@keyframes wave2 {
+    0% {
+        transform: scaleY(.6) translateX(0%);
+    }
+    100% {
+        transform: scaleY(.6) translateX(100%);
+    }
+}
+
+@keyframes swell {
+    0%,
+    100% {
+        transform: translate3d(0, -40px, 0);
+    }
+    50% {
+        transform: translate3d(0, -10px, 0);
+    }
+}

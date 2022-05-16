@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
+<style>
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
 <body>
     <%- include('./partials/header.ejs') %>
-    <div class="container text-center">
+    <div class="container text-center center">
         <h1>Perguntas Frequentes</h1>
         <div class="btn-group">
             <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

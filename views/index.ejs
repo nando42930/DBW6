@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
+    </head>
 <body>
     <%- include('./partials/header.ejs') %>
-    <div class="container">
-        <h1>Bem-vindo ao HelpDesk!</h1>
-        <p style="text-align: justify">Lorem ipsum dolor sit amet. Ea pariatur voluptatem 33 debitis non iste velit est
-            dolorum nihil ut quia ratione quo nisi facere. Qui accusantium maxime est aperiam modi sit sequi doloribus
-            non sint velit qui enim enim est laboriosam officiis! Et dolorem iste ut voluptatum corporis est debitis
-            facilis est dolor doloribus et consequatur temporibus hic eligendi dolorem ea mollitia placeat.</p>
-        <h3>Contactos</h3>
-        <p><i class="bi bi-telephone"></i> +351 961 666 333</p>
-        <p><i class="bi bi-envelope"></i> grupo6@dbw.uma.pt</p>
-        <p><i class="bi bi-geo-alt"></i> Universidade da Madeira</p>
+    <div class="px-4 py-5 my-5">
+        <div class="text-center">
+        <h1 class="display-5 fw-bold">Bem-vindo ao HelpDesk!</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 text" style="text-align: justify">Lorem ipsum dolor sit amet. Ea pariatur voluptatem 33 debitis non iste velit est
+                dolorum nihil ut quia ratione quo nisi facere. Qui accusantium maxime est aperiam modi sit sequi doloribus
+                non sint velit qui enim enim est laboriosam officiis! Et dolorem iste ut voluptatum corporis est debitis
+                facilis est dolor doloribus et consequatur temporibus hic eligendi dolorem ea mollitia placeat.</p>
+        </div>
+        </div>
+        <div class="offset-lg-2 py-5 my-5">
+            <h1 class="display-6 fw-normal">Contactos</h1>
+            <div class="col-lg-4">
+                <p><i class="lead mb-4 text bi bi-telephone m-2"></i>+351 961 666 333</p>
+                <p><i class="lead mb-4 text bi bi-envelope m-2"></i>grupo6@dbw.uma.pt</p>
+                <p><i class="lead mb-4 text bi bi-geo-alt m-2"></i>Universidade da Madeira</p>
+            </div>
+        </div>
     </div>
     <%- include('./partials/footer.ejs') %>
 </body>
