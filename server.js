@@ -3,12 +3,24 @@ var ejs = require('ejs');
 var bodyParser = require('body-parser');
 var messageController = require('./controller/messageController');
 var mongoConfigs = require('./model/mongoConfigs');
+const session = require("express-session");
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
+const ensureLoggedOut = require('connect-ensure-login').ensureLoggedOut;
+const passport = require("passport");
 
 var app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('assets'));
-
 var jsonParser = bodyParser.json();
+
+const sessionMiddleware = session({ secret: "changeit", resave: false, saveUninitialized: false });
+app.use(sessionMiddleware);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(passport.initialize());
+app.use(passport.session());
+const LocalStrategy = require("passport-local").Strategy;
+
+const mongoose = require('./model/mongoConfigs').mongoose;
 
 //constants for our view and messenger
 const defaultMessage = "Type your message here";
@@ -17,13 +29,8 @@ const textboxId = 'typeMessage';
 const textboxSelector = '#' + textboxId;
 const resultSelector = '#result';
 
-//Setup mongo connection and web server upon callback
-mongoConfigs.connect(function (err) {
-    if (!err) {
-        app.listen(3000, function () {
-            console.log("Express web server listening on port 3000");
-        });
-    }
+app.listen(3000, function () {
+    console.log("Express web server listening on port 3000");
 });
 
 app.get('/', function (req, res) {
@@ -81,10 +88,54 @@ app.get('/newTicket', function (req, res) {
     res.render('newTicket');
 });
 
-app.get('/register', function (req, res) {
+app.get('/register', ensureLoggedOut('/'), function (req, res) {
     res.render('register');
 });
 
 app.get('/ticket', function (req, res) {
     res.render('ticket');
+});
+
+//Set the schema
+const userSchema = new mongoose.Schema({
+    username: String,
+    password: String
+});
+
+//Compile the schema into a model
+const User = mongoose.model('User', userSchema);
+
+//Set the behaviour
+userSchema.methods.verifyPassword = function (password) {
+    return password === this.password;
+}
+
+passport.use(new LocalStrategy(
+    function(username, password, done) {
+        User.findOne({ username: username }, function (err, user) {
+            if (err) { return done(err); }
+            if (!user) { return done(null, false); }
+            if (!user.verifyPassword(password)) { return done(null, false); }
+            return done(null, user);
+        });
+    }
+));
+
+app.post(
+    "/login",
+    passport.authenticate("local", {
+        successRedirect: "/",
+        failureRedirect: "/login",
+    })
+);
+
+app.post("/register",function(req,res){
+    //New User in the DB
+    const instance = new User({ username: req.body.username, password: req.body.password });
+    instance.save(function (err, instance) {
+        if (err) return console.error(err);
+
+        //Let's redirect to the login post which has auth
+        res.redirect(307, '/login');
+    });
 });
