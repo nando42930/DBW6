@@ -7,19 +7,32 @@
 </head>
 <body>
     <%- include('./partials/header.ejs') %>
-    <div class="container">
-        <div id="novogrupo">
-            <i class="bi bi-plus-circle"></i>
-            <button type="submit" style="float: right; margin-top:10px;" onclick="window.location.href='/newSupport.ejs'">Criar grupo</button><br><br>
-        </div>
-         <div class="grupos">
-             <ul>
-                 <label>gruponome</label>
-                 <label><button type="entrar">Entrar!</button></label>
-                 <label><button type="sair">Sair!</button></label>
-             </ul>
-        </div>
-
+    <div class="container" id="novogrupo">
+        <i class="bi bi-plus-circle"></i>
+        <button type="submit" style="float: right; margin-top:10px;" onclick="window.location.href='/newSupport'">Criar
+            grupo
+        </button>
+        <br><br>
+    </div>
+    <div class="grupos">
+        <table id="lista_grupo">
+            <tr>
+                <th>Grupo</th>
+                <th>Título</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <script>
+                    support.searchUser.forEach(function (support) {
+                        <button onclick="window.location.href='/chatSupport'">
+                            <td>{support.username}</td>
+                            <td>{support.title}</td>
+                            <td>{support.description}</td>
+                        </button>
+                    });
+                </script>
+            </tr>
+        </table>
     </div>
     <%- include('./partials/footer.ejs') %>
 </body>

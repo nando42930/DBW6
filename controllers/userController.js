@@ -1,9 +1,10 @@
 const UserModel = require('../models/user');
 
-//The callback code could have been refactored in to a single function
-exports.insert = (req, res) => {
-    UserModel.createUser(req.body, (doc, err) => {
-        if (!err) res.status(201).send({id: doc._id});
-        else res.status(500).send({message: err.message});
-    });
+//we take care of the request here not in the route, i.e. req.body.message is here, this is the job of the controller, take care of requests
+function insert (req, callback) {
+    UserModel.createUser({username: req.body.username, password: req.body.password}, callback);
+}
+
+module.exports = {
+    insert
 };
