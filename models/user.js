@@ -20,3 +20,8 @@ exports.createUser = (userData, cb) => {
         .then(doc => cb(doc))
         .catch(err => cb(null, err)); //In this case the callback signature should be changed to include the err parameter
 };
+
+module.exports = {
+    createUser,
+    User
+};
