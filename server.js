@@ -95,7 +95,6 @@ app.get('/newFAQ', function (req, res) {
 app.post("/register", jsonParser, function(req,res){
     userController.insert(req, function () {
         //We have to send JSON back or the success ajax event does not work
-        // res.status(200).send({data: 'OK'});
         res.redirect(307, '/login');
     });
 });
@@ -114,7 +113,7 @@ app.post(messengerRoute, jsonParser, function (req, res) {
     });
 });
 
-app.post('/newSupport', function (req, res) {
+app.post('/newSupport', jsonParser, function (req, res) {
     supportController.createSupport(req, function () {
         res.redirect(307, '/chatSupport');
     })

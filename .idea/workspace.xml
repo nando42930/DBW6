@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="mongoose">
-      <change afterPath="$PROJECT_DIR$/controllers/supportController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="register">
+      <change afterPath="$PROJECT_DIR$/controllers/faqController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/ticketsController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/faq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/tickets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mongoConfigs.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongooseConfigs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/support.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support.ejs" afterDir="false" />
-    </list>
-    <list id="be24ec3d-640e-4d9a-ba94-4315d50547f4" name="Changes by paulo" comment="">
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/newSupport.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newSupport.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/support.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support.ejs" afterDir="false" />
     </list>
+    <list id="be24ec3d-640e-4d9a-ba94-4315d50547f4" name="Changes by paulo" comment="Changes by paulo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,20 +38,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/views/support.ejs">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="6" changelist="be24ec3d-640e-4d9a-ba94-4315d50547f4" />
-        <range start1="8" end1="21" start2="9" end2="35" changelist="cbb455ce-6c32-48c3-b813-db3580aea8b0" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/models/user.js">
-      <ranges>
-        <range start1="15" end1="16" start2="15" end2="16" changelist="cbb455ce-6c32-48c3-b813-db3580aea8b0" />
-        <range start1="22" end1="22" start2="22" end2="27" changelist="be24ec3d-640e-4d9a-ba94-4315d50547f4" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -80,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UMa/DBW/Teoria/[2022] P6 - AJAX - Enunciado e Solução" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UMa/DBW/Teoria/[2022] P9 - REST API - Enunciado e solução" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -91,6 +67,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\assets\images" />
+      <recent name="C:\Users\Nandj\WebstormProjects\DBW6" />
       <recent name="C:\Users\Nandj\WebstormProjects\DBW6\assets" />
       <recent name="C:\Users\Nandj\WebstormProjects\DBW6\images" />
     </key>
@@ -145,7 +123,9 @@
       <workItem from="1652827957955" duration="2202000" />
       <workItem from="1652830998314" duration="403000" />
       <workItem from="1652897382173" duration="6520000" />
-      <workItem from="1652949026964" duration="24366000" />
+      <workItem from="1652949026964" duration="26358000" />
+      <workItem from="1652978624084" duration="1017000" />
+      <workItem from="1653137120732" duration="4478000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1651266335179</created>
@@ -203,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652953407515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes by paulo">
+      <created>1652975436812</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652975436812</updated>
+    </task>
+    <task id="LOCAL-00010" summary="register">
+      <created>1652975450288</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652975450288</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,14 +218,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="views" />
-    <MESSAGE value="Changes by paulo" />
     <MESSAGE value="mongoose" />
-    <option name="LAST_COMMIT_MESSAGE" value="mongoose" />
+    <MESSAGE value="Changes by paulo" />
+    <MESSAGE value="register" />
+    <option name="LAST_COMMIT_MESSAGE" value="register" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
-        <watch expression="req.statusCode" />
         <watch expression="req.statusCode" />
       </configuration>
     </watches-manager>
