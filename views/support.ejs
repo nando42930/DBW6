@@ -6,34 +6,36 @@
     <script>const support = require('./models/support');</script>
 </head>
 <body>
-    <%- include('./partials/header.ejs') %>
-    <div class="container" id="novogrupo">
-        <i class="bi bi-plus-circle"></i>
-        <button type="submit" style="float: right; margin-top:10px;" onclick="window.location.href='/newSupport'">Criar
-            grupo
-        </button>
-        <br><br>
-    </div>
-    <div class="grupos">
-        <table id="lista_grupo">
-            <tr>
-                <th>Grupo</th>
-                <th>Título</th>
-                <th>Descrição</th>
-            </tr>
-            <tr>
-                <script>
-                    support.searchUser.forEach(function (support) {
-                        <button onclick="window.location.href='/chatSupport'">
-                            <td>{support.username}</td>
-                            <td>{support.title}</td>
-                            <td>{support.description}</td>
-                        </button>
-                    });
-                </script>
-            </tr>
-        </table>
-    </div>
-    <%- include('./partials/footer.ejs') %>
+<%- include('./partials/header.ejs') %>
+<div class="container">
+    <button class="btn btn-lg my-3 border" type="submit" style="float: right; margin-top:10px;"
+            onclick="window.location.href='/newSupport'"><i class="bi bi-plus-circle px-1"></i>Criar
+        grupo
+    </button>
+    <br><br>
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Grupo</th>
+            <th>Título</th>
+            <th>Descrição</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <script>
+                support.searchUser.forEach(function (support) {
+                    <button onclick="window.location.href='/chatSupport'">
+                        <td>{support.username}</td>
+                        <td>{support.title}</td>
+                        <td>{support.description}</td>
+                    </button>
+                });
+            </script>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<%- include('./partials/footer.ejs') %>
 </body>
 </html>

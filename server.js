@@ -13,6 +13,7 @@ const port = process.env.PORT || 8080;
 
 var app = express();
 const server = require("http").createServer(app);
+// Setting up Embedded JavaScript Template Engine
 app.set('view engine', 'ejs');
 app.use(express.static('assets'));
 var jsonParser = bodyParser.json();
@@ -73,7 +74,7 @@ app.get('/newTicket', function (req, res) {
 });
 
 app.get('/checkTicket', function (req, res) {
-    res.render('checkTicket');
+    res.render('ticket');
 });
 
 app.get('/ticket', function (req, res) {
@@ -82,10 +83,6 @@ app.get('/ticket', function (req, res) {
 
 app.get('/faq', function (req, res) {
     res.render('faq');
-});
-
-app.get('/answerTicket', function (req, res) {
-    res.render('answerTicket');
 });
 
 app.get('/newFAQ', function (req, res) {
@@ -105,18 +102,26 @@ app.post("/login", passport.authenticate("local", {
     })
 );
 
+app.post('/newSupport', jsonParser, function (req, res) {
+    supportController.createSupport(req, function () {
+        res.redirect(303, '/chatSupport');
+    })
+});
+
+app.post('/newFAQ', jsonParser, function (req, res) {
+        res.redirect(303, '/faq');
+});
+
+app.post('/newTicket', jsonParser, function (req, res) {
+    res.redirect(303, '/tickets');
+});
+
 app.post(messengerRoute, jsonParser, function (req, res) {
     //add to mongoDB
     messageController.addMessage(req, function () {
         //We have to send JSON back or the success ajax event does not work
         res.status(200).send({data: 'OK'});
     });
-});
-
-app.post('/newSupport', jsonParser, function (req, res) {
-    supportController.createSupport(req, function () {
-        res.redirect(307, '/chatSupport');
-    })
 });
 
 passport.serializeUser((user, cb) => {

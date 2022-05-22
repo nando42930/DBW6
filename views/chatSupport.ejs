@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <%- include('./partials/header.ejs') %>
-    <div class="container">
-
+<%- include('./partials/header.ejs') %>
+<div class="container">
+    <div class="container list-group-item rounded-bottom rounded-end my-2">
+        <span class="float-start"><i class="bi bi-person-circle px-2"></i>Utilizador</span><br><br>
+        <div class="row">
+            <p class="col text-start px-5">Hello. How are you today?</p>
+            <span class="col-md-auto fw-lighter">11:00</span>
+        </div>
     </div>
-    <%- include('./partials/footer.ejs') %>
+    <div class="container list-group-item-dark rounded-bottom rounded-start my-2">
+        <span class="float-end">Utilizador<i class="bi bi-person-circle px-2"></i></span><br><br>
+        <div class="row">
+            <span class="col-md-auto fw-lighter">11:01</span>
+            <p class="col text-end px-5">Hey! I'm fine. Thanks for asking!</p>
+        </div>
+    </div>
+    <br>
+</div>
+<%- include('./partials/footer.ejs') %>
 </body>
 </html>

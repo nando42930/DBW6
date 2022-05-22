@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="register">
-      <change afterPath="$PROJECT_DIR$/controllers/faqController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/ticketsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/faq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/tickets.js" afterDir="false" />
+    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="mongoose schemas">
+      <change afterPath="$PROJECT_DIR$/tests/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/faqController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/faqController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/ticketsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ticketsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tickets.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tickets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/answerTicket.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/chatSupport.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/chatSupport.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/checkTicket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/checkTicket.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/faq.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/newFAQ.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newFAQ.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/newSupport.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newSupport.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/newTicket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newTicket.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/support.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ticket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/ticket.ejs" afterDir="false" />
     </list>
     <list id="be24ec3d-640e-4d9a-ba94-4315d50547f4" name="Changes by paulo" comment="Changes by paulo" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,6 +78,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\tests" />
       <recent name="C:\Users\Nandj\WebstormProjects\DBW6\assets\images" />
       <recent name="C:\Users\Nandj\WebstormProjects\DBW6" />
       <recent name="C:\Users\Nandj\WebstormProjects\DBW6\assets" />
@@ -125,7 +137,7 @@
       <workItem from="1652897382173" duration="6520000" />
       <workItem from="1652949026964" duration="26358000" />
       <workItem from="1652978624084" duration="1017000" />
-      <workItem from="1653137120732" duration="4478000" />
+      <workItem from="1653137120732" duration="31489000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1651266335179</created>
@@ -197,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652975450288</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="mongoose schemas">
+      <created>1653150045548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653150045548</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +240,8 @@
     <MESSAGE value="mongoose" />
     <MESSAGE value="Changes by paulo" />
     <MESSAGE value="register" />
-    <option name="LAST_COMMIT_MESSAGE" value="register" />
+    <MESSAGE value="mongoose schemas" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongoose schemas" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

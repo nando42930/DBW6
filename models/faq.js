@@ -2,7 +2,7 @@ const mongoose = require('./mongooseConfigs').mongoose;
 
 //Set the schema
 const faqSchema = new mongoose.Schema({
-    category: String, question: String, answer: String
+    category: String, question: String, answer: String, pinned: Boolean
 });
 
 //Compile the schema into a model

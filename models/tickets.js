@@ -2,7 +2,7 @@ const mongoose = require('./mongooseConfigs').mongoose;
 
 //Set the schema
 const ticketsSchema = new mongoose.Schema({
-    title: String, description: String, email: String, state: Boolean
+    title: String, description: String, email: String, state: Boolean, date: Date
 });
 
 //Compile the schema into a models

@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
-<style>
-    .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-</style>
+<head>
+    <link rel="stylesheet" href="/styles/custom.css">
+</head>
 <body>
-    <%- include('./partials/header.ejs') %>
-    <div class="container text-center center">
-        <h1>Perguntas Frequentes</h1>
-        <div class="btn-group">
-            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categorias <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Categoria 1</a></li>
-                <li><a href="#">Categoria 2</a></li>
-            </ul>
+<%- include('./partials/header.ejs') %>
+<div class="container text-center">
+    <h1>Perguntas Frequentes</h1>
+    <select class="dropdown-header btn-lg border-dark my-3" name="categories">
+        <option value="category1">Categoria 1</option>
+        <option value="category2">Categoria 2</option>
+        <option value="category3">Categoria 3</option>
+        <option value="category4">Categoria 4</option>
+    </select>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Pergunta 1?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Resposta 1.</div>
+            </div>
         </div>
-        <div class="container">
-            <i class="bi bi-person-circle"></i>
-            <p>Hello. How are you today?</p>
-            <span class="time-right">11:00</span>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Pergunta 2?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Resposta 2.</div>
+            </div>
         </div>
-
-        <div class="container darker">
-            <i class="bi bi-person-circle"></i>
-            <p>Hey! I'm fine. Thanks for asking!</p>
-            <span class="time-left">11:01</span>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Pergunta 3?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Resposta 3.</div>
+            </div>
         </div>
-        <button class="btn btn-lg" style="border: solid" type="button">
-            Criar Pergunta
-        </button>
     </div>
-    <%- include('./partials/footer.ejs') %>
+    <button class="btn btn-lg my-3" style="border: solid" type="button" onclick="window.location.href='/newFAQ'">
+        Criar Pergunta
+    </button>
+</div>
+<%- include('./partials/footer.ejs') %>
 </body>
 </html>
