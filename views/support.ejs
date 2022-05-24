@@ -23,19 +23,28 @@
         </thead>
         <tbody>
         <tr>
-            <script>
-                support.searchUser.forEach(function (support) {
-                    <button onclick="window.location.href='/chatSupport'">
-                        <td>{support.username}</td>
-                        <td>{support.title}</td>
-                        <td>{support.description}</td>
-                    </button>
-                });
-            </script>
+            <td colspan="3">No user</td>
         </tr>
+
         </tbody>
     </table>
 </div>
 <%- include('./partials/footer.ejs') %>
 </body>
 </html>
+
+<!-- if(data.length){
+for(var i = 0; i < data.length; ++i) {
+            <button onclick="window.location.href='/chatSupport'">
+                <tr>
+                    <td> data[i].category </td>
+                    <td> data[i].question </td>
+                    <td> data[i].answer </td>
+                </tr>
+            </button>
+         }
+}else{
+            <tr>
+                <td colspan="3">No user</td>
+            </tr>
+         } -->

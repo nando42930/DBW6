@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="mongoose schemas">
-      <change afterPath="$PROJECT_DIR$/tests/test.html" afterDir="false" />
+    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="static views">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/faqController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/faqController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/messageController.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/ticketsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ticketsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Message.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tickets.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tickets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/mongooseConfigs.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongooseConfigs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/answerTicket.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/chatSupport.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/chatSupport.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/checkTicket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/checkTicket.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/faq.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/newFAQ.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newFAQ.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/newSupport.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newSupport.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/newTicket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newTicket.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/support.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ticket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/ticket.ejs" afterDir="false" />
     </list>
     <list id="be24ec3d-640e-4d9a-ba94-4315d50547f4" name="Changes by paulo" comment="Changes by paulo" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +131,10 @@
       <workItem from="1652897382173" duration="6520000" />
       <workItem from="1652949026964" duration="26358000" />
       <workItem from="1652978624084" duration="1017000" />
-      <workItem from="1653137120732" duration="31489000" />
+      <workItem from="1653137120732" duration="31647000" />
+      <workItem from="1653244095110" duration="2796000" />
+      <workItem from="1653266277959" duration="34043000" />
+      <workItem from="1653428015914" duration="1684000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1651266335179</created>
@@ -216,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653150045548</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="static views">
+      <created>1653204462934</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653204462934</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,14 +245,8 @@
     <MESSAGE value="Changes by paulo" />
     <MESSAGE value="register" />
     <MESSAGE value="mongoose schemas" />
-    <option name="LAST_COMMIT_MESSAGE" value="mongoose schemas" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="NodeJSConfigurationType">
-        <watch expression="req.statusCode" />
-      </configuration>
-    </watches-manager>
+    <MESSAGE value="static views" />
+    <option name="LAST_COMMIT_MESSAGE" value="static views" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

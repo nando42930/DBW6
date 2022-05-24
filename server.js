@@ -1,8 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var supportController = require('./controllers/supportController');
-var messageController = require('./controllers/messageController');
 var userController = require('./controllers/userController');
+var faqController = require('./controllers/faqController');
+var ticketsController = require('./controllers/ticketsController');
 const session = require("express-session");
 const passport = require("passport");
 const User = require("./models/user").User;
@@ -82,11 +83,19 @@ app.get('/ticket', function (req, res) {
 });
 
 app.get('/faq', function (req, res) {
-    res.render('faq');
+    faqController.list(req, function (docs) {
+        res.render('faq', {data: docs});
+    });
 });
 
 app.get('/newFAQ', function (req, res) {
     res.render('newFAQ');
+});
+
+app.post('/newFAQ', function (req, res) {
+    faqController.insert(req, function () {
+        res.redirect(303, '/faq')
+    })
 });
 
 app.post("/register", jsonParser, function(req,res){
@@ -113,15 +122,9 @@ app.post('/newFAQ', jsonParser, function (req, res) {
 });
 
 app.post('/newTicket', jsonParser, function (req, res) {
-    res.redirect(303, '/tickets');
-});
-
-app.post(messengerRoute, jsonParser, function (req, res) {
-    //add to mongoDB
-    messageController.addMessage(req, function () {
-        //We have to send JSON back or the success ajax event does not work
-        res.status(200).send({data: 'OK'});
-    });
+    ticketsController.insert(req, function () {
+        res.redirect(303, '/tickets');
+    })
 });
 
 passport.serializeUser((user, cb) => {

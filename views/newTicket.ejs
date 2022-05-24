@@ -2,16 +2,16 @@
 <html>
 <body>
 <%- include('./partials/header.ejs') %>
-<div class="container">
+<div class="container text-center">
     <h1>Crie o seu ticket</h1>
     <form action="/newTicket" method="POST">
         <input class="form-control input-lg my-2" name="title" placeholder="Inserir título...">
         <textarea class="form-control input-lg my-2" name="description" placeholder="Inserir descrição..."></textarea>
         <div class="input-group">
             <div class="input-group-text" id="btnGroupAddon">@</div>
-            <input type="text" class="form-control" placeholder="Inserir e-mail...">
+            <input type="text" class="form-control" name="email" placeholder="Inserir e-mail...">
         </div>
-        <button class="btn btn-lg my-3" style="border: solid" type="submit" onclick="window.location.href='/tickets'">
+        <button class="btn btn-lg my-3 border" type="submit" onclick="window.location.href='/tickets'">
             Criar Ticket
         </button>
     </form>

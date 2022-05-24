@@ -7,48 +7,67 @@
 <%- include('./partials/header.ejs') %>
 <div class="container text-center">
     <h1>Perguntas Frequentes</h1>
-    <select class="dropdown-header btn-lg border-dark my-3" name="categories">
-        <option value="category1">Categoria 1</option>
-        <option value="category2">Categoria 2</option>
-        <option value="category3">Categoria 3</option>
-        <option value="category4">Categoria 4</option>
-    </select>
+    <form method="GET">
+        <select class="dropdown-header btn-lg border-dark my-3" name="category" id="selectCategory"
+                onchange="window.location.href='/faq'">
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+            <option value="4">Categoria 4</option>
+        </select>
+    </form>
+    <% if (data.length) { %>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Pergunta 1?
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                    <%= data[0].question %>
                 </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">Resposta 1.</div>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body"><%= data[0].answer %></div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Pergunta 2?
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">Resposta 2.</div>
+        <% for (var i = 1; i < data.length; ++i) { %>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <%= data[i].question %>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body"><%= data[i].answer %></div>
+                </div>
             </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Pergunta 3?
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">Resposta 3.</div>
-            </div>
-        </div>
+        <% } } else { %>
+            <tr>
+                <td>Não existem perguntas frequentes.</td>
+            </tr><br>
+        <% } %>
+        <button class="btn btn-lg my-3 border" type="button" onclick="window.location.href='/newFAQ'">
+            Criar Pergunta
+        </button>
     </div>
-    <button class="btn btn-lg my-3" style="border: solid" type="button" onclick="window.location.href='/newFAQ'">
-        Criar Pergunta
-    </button>
 </div>
 <%- include('./partials/footer.ejs') %>
+<!--<script>
+    function updateFAQ() {
+        // document.getElementById("FAQ").reload;
+        var x = document.getElementById("selectCategory").value;
+        console.log(x);
+        var container = document.getElementById("selectCategory");
+        var content = container.innerHTML;
+        container.innerHTML = content;
+        fetch('/faq', {
+            method: 'GET',
+            body: {category: x}
+        });
+    }
+</script>-->
 </body>
 </html>

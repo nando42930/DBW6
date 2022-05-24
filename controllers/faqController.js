@@ -7,6 +7,10 @@ function insert(req, callback) {
     }, callback);
 }
 
+function list(req, callback) {
+    FaqModel.list({category: req.body.category}, callback);
+}
+
 module.exports = {
-    insert
+    insert, list
 }

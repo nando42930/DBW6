@@ -2,18 +2,18 @@
 <html>
 <body>
 <%- include('./partials/header.ejs') %>
-<div class="container">
+<div class="container text-center">
     <h1>Crie a sua pergunta</h1>
-    <select class="dropdown-header btn-lg border-dark my-3" name="categories">
-        <option value="category1">Categoria 1</option>
-        <option value="category2">Categoria 2</option>
-        <option value="category3">Categoria 3</option>
-        <option value="category4">Categoria 4</option>
-    </select>
     <form action="/newFAQ" method="POST">
+        <select class="dropdown-header btn-lg border-dark my-3" name="category">
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+            <option value="4">Categoria 4</option>
+        </select>
         <input class="form-control input-lg my-2" name="question" placeholder="Criar pergunta...">
         <textarea class="form-control input-lg my-2" name="answer" placeholder="Criar resposta..."></textarea>
-        <button class="btn btn-lg my-3" style="border: solid" type="submit" onclick="window.location.href='/newFAQ'">
+        <button class="btn btn-lg my-3 border" type="submit" onclick="window.location.href='/newFAQ'">
             Criar Pergunta
         </button>
     </form>

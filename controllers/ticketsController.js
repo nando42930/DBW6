@@ -6,8 +6,8 @@ function insert(req, callback) {
         title: req.body.title,
         description: req.body.description,
         email: req.body.email,
-        state: req.body.state,
-        date: req.headers["Date"]
+        state: true,
+        date: new Date(),
     }, callback);
 }
 

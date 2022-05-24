@@ -2,7 +2,7 @@ const mongoose = require('./mongooseConfigs').mongoose;
 
 //Set the schema
 const faqSchema = new mongoose.Schema({
-    category: String, question: String, answer: String, pinned: Boolean
+    category: Number, question: String, answer: String, pinned: Boolean
 });
 
 //Compile the schema into a model
@@ -16,6 +16,13 @@ function createFaq(faqData, cb) {
         .catch(err => cb(null, err)); //In this case the callback signature should be changed to include the err parameter
 }
 
+function list(faqData, cb) {
+    // Faq.find().then(doc => cb(doc)).catch(err => cb(err));
+    Faq.find({faqData}, function (err, docs) {
+       cb(docs);
+    });
+}
+
 module.exports = {
-    createFaq, Faq
+    createFaq, list, Faq
 }
