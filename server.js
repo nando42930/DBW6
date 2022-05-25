@@ -25,13 +25,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-//constants for our view and messenger
-const defaultMessage = "Type your message here";
-const messengerRoute = '/messenger';
-const textboxId = 'typeMessage';
-const textboxSelector = '#' + textboxId;
-const resultSelector = '#result';
-
 server.listen(port, function () {
     console.log(`Application running @ http://localhost:${port}`);
 });
@@ -47,49 +40,49 @@ app.get("/", (req, res) => {
 });
 
 app.get('/register', ensureLoggedOut('/'), function (req, res) {
-    res.render('register');
+    res.render('user/register');
 });
 
 app.get('/login', function (req, res) {
-    res.render('login');
+    res.render('user/login');
 });
 
 app.get('/support', function (req, res) {
-    res.render('support');
+    res.render('support/support');
 });
 
 app.get('/newSupport', function (req, res) {
-    res.render('newSupport');
+    res.render('support/newSupport');
 });
 
 app.get('/chatSupport', function (req, res) {
-    res.render('chatSupport');
+    res.render('support/chatSupport');
 });
 
 app.get('/tickets', function (req, res) {
-    res.render('tickets');
+    res.render('tickets/tickets');
 });
 
 app.get('/newTicket', function (req, res) {
-    res.render('newTicket');
+    res.render('tickets/newTicket');
 });
 
 app.get('/checkTicket', function (req, res) {
-    res.render('ticket');
+    res.render('tickets/checkTicket');
 });
 
 app.get('/ticket', function (req, res) {
-    res.render('ticket');
+    res.render('tickets/ticket');
 });
 
 app.get('/faq', function (req, res) {
     faqController.list(req, function (docs) {
-        res.render('faq', {data: docs});
+        res.render('faq/faq', {data: docs});
     });
 });
 
 app.get('/newFAQ', function (req, res) {
-    res.render('newFAQ');
+    res.render('faq/newFAQ');
 });
 
 app.post('/newFAQ', function (req, res) {
@@ -113,7 +106,7 @@ app.post("/login", passport.authenticate("local", {
 
 app.post('/newSupport', jsonParser, function (req, res) {
     supportController.createSupport(req, function () {
-        res.redirect(303, '/chatSupport');
+        res.redirect(303, '/support');
     })
 });
 

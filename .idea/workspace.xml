@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="static views">
+    <list default="true" id="cbb455ce-6c32-48c3-b813-db3580aea8b0" name="Changes" comment="static views update">
+      <change afterPath="$PROJECT_DIR$/views/partials/head.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/faqController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/faqController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/messageController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ticketsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ticketsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/mongooseConfigs.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/mongooseConfigs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/faq.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/newFAQ.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newFAQ.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/newTicket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/newTicket.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/support.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/chatSupport.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support/chatSupport.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/checkTicket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/tickets/checkTicket.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/faq.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/faq/faq.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/newFAQ.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/faq/newFAQ.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/newSupport.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support/newSupport.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/newTicket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/tickets/newTicket.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/register.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/register.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/support.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/support/support.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ticket.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/tickets/ticket.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tickets.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/tickets/tickets.ejs" afterDir="false" />
     </list>
-    <list id="be24ec3d-640e-4d9a-ba94-4315d50547f4" name="Changes by paulo" comment="Changes by paulo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UMa/DBW/Teoria/[2022] P9 - REST API - Enunciado e solução" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UMa/DBW/Teoria/[2022] P6 - AJAX - Enunciado e Solução" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -72,11 +78,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\tests" />
-      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\assets\images" />
       <recent name="C:\Users\Nandj\WebstormProjects\DBW6" />
-      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\assets" />
-      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\images" />
+      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\config" />
+      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\views\support" />
+      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\views\faq" />
+      <recent name="C:\Users\Nandj\WebstormProjects\DBW6\views\user" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
@@ -134,7 +140,7 @@
       <workItem from="1653137120732" duration="31647000" />
       <workItem from="1653244095110" duration="2796000" />
       <workItem from="1653266277959" duration="34043000" />
-      <workItem from="1653428015914" duration="1684000" />
+      <workItem from="1653428015914" duration="19734000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1651266335179</created>
@@ -220,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653204462934</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="static views update">
+      <created>1653429813972</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653429813972</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +259,8 @@
     <MESSAGE value="register" />
     <MESSAGE value="mongoose schemas" />
     <MESSAGE value="static views" />
-    <option name="LAST_COMMIT_MESSAGE" value="static views" />
+    <MESSAGE value="static views update" />
+    <option name="LAST_COMMIT_MESSAGE" value="static views update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="/styles/custom.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <script>const support = require('./models/support');</script>
-</head>
+<%- include('../partials/head.ejs') %>
 <body>
-<%- include('./partials/header.ejs') %>
+<%- include('../partials/header.ejs') %>
 <div class="container">
     <button class="btn btn-lg my-3 border" type="submit" style="float: right; margin-top:10px;"
             onclick="window.location.href='/newSupport'"><i class="bi bi-plus-circle px-1"></i>Criar
@@ -23,13 +19,13 @@
         </thead>
         <tbody>
         <tr>
-            <td colspan="3">No user</td>
+            <td colspan="3">Não existem salas de chat criadas.</td>
         </tr>
 
         </tbody>
     </table>
 </div>
-<%- include('./partials/footer.ejs') %>
+<%- include('../partials/footer.ejs') %>
 </body>
 </html>
 

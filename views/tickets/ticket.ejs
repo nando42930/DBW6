@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+<%- include('../partials/head.ejs') %>
 <body>
-<%- include('./partials/header.ejs') %>
+<%- include('../partials/header.ejs') %>
 <div class="container">
     <h1>Título do Ticket</h1>
     <div class="container list-group-item rounded my-2">
@@ -14,11 +15,12 @@
     <form action="/ticket" method="POST" style="visibility: hidden" id="send">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Inserir resposta...">
-            <button class="btn btn-outline-secondary" type="button" onclick="sendReply()"><i class="bi bi-send"></i></button>
+            <button class="btn btn-outline-secondary" type="button" onclick="sendReply()"><i class="bi bi-send"></i>
+            </button>
         </div>
     </form>
 </div>
-<%- include('./partials/footer.ejs') %>
+<%- include('../partials/footer.ejs') %>
 <script>
     function reply() {
         document.getElementById("reply").style.visibility = "hidden";
