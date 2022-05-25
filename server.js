@@ -48,7 +48,9 @@ app.get('/login', function (req, res) {
 });
 
 app.get('/support', function (req, res) {
-    res.render('support/support');
+    supportController.list(req, function (docs) {
+        res.render('support/support', {data: docs});
+    });
 });
 
 app.get('/newSupport', function (req, res) {
@@ -68,11 +70,15 @@ app.get('/newTicket', function (req, res) {
 });
 
 app.get('/checkTicket', function (req, res) {
-    res.render('tickets/checkTicket');
+    ticketsController.list(req, function (docs) {
+        res.render('tickets/checkTicket', {data: docs});
+    });
 });
 
 app.get('/ticket', function (req, res) {
-    res.render('tickets/ticket');
+    ticketsController.findByTitle(req, function (doc) {
+        res.render('tickets/ticket', {data: doc});
+    })
 });
 
 app.get('/faq', function (req, res) {
@@ -120,6 +126,12 @@ app.post('/newTicket', jsonParser, function (req, res) {
     })
 });
 
+app.post('/ticket', jsonParser, function (req, res) {
+    ticketsController.patchByTitle(req, function () {
+        res.redirect(303, '/ticket');
+    })
+});
+
 passport.serializeUser((user, cb) => {
     console.log(`serializeUser ${user.id}`);
     cb(null, user.id);
@@ -163,19 +175,11 @@ io.on('connect', (socket) => {
     session.socketId = socket.id;
     session.save();
 
-    //Chat
-    socket.on("join", function () {
-        console.log(socket.request.user.username + " joined server");
-        io.emit("update", socket.request.user.username + " has joined the server.");
-    });
-
-
     socket.on('chat message', function (msg) {
         console.log('message: ' + msg);
         var mensagem = {msg: msg, id: socket.request.user.username};
         io.emit('chat message', mensagem);
     })
-
 });
 
 passport.use(new LocalStrategy(

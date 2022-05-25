@@ -2,13 +2,8 @@ const mongoose = require('./mongooseConfigs').mongoose;
 
 //Set the schema
 const supportSchema = new mongoose.Schema({
-    username: String, title: String, description: String,
+    title: String, description: String
 });
-
-//Set the behaviour
-supportSchema.methods.verifyusername = function (username) {
-    return username === this.username;
-}
 
 //Compile the schema into a models
 const Support = mongoose.model('Support', supportSchema);
@@ -27,3 +22,9 @@ exports.createSupport = (supportData, cb) => {
         .then(doc => cb(doc))
         .catch(err => cb(null, err)); //In this case the callback signature should be changed to include the err parameter
 };
+
+exports.list = (supportData, cb) => {
+    Support.find({supportData}, function (err, docs) {
+        cb(docs);
+    });
+}

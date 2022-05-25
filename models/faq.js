@@ -17,7 +17,6 @@ function createFaq(faqData, cb) {
 }
 
 function list(faqData, cb) {
-    // Faq.find().then(doc => cb(doc)).catch(err => cb(err));
     Faq.find({faqData}, function (err, docs) {
        cb(docs);
     });

@@ -5,12 +5,25 @@ function insert(req, callback) {
     TicketsModel.createTicket({
         title: req.body.title,
         description: req.body.description,
+        answer: null,
         email: req.body.email,
         state: true,
         date: new Date(),
     }, callback);
 }
 
+function list(req, callback) {
+    TicketsModel.list({category: req.body.category}, callback);
+}
+
+function findByTitle(req, callback) {
+    TicketsModel.findByTitle({}, callback);
+}
+
+function patchByTitle(req, callback) {
+    TicketsModel.patchTicket({title: req.body.title}, {answer: req.body.answer, state: false}, callback);
+}
+
 module.exports = {
-    insert
+    insert, list, findByTitle, patchByTitle
 }

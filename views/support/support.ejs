@@ -18,29 +18,21 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td colspan="3">Não existem salas de chat criadas.</td>
-        </tr>
-
+        <%if(data.length) { %>
+            <% for (var i = 0; i < data.length; ++i) { %>
+                <tr onclick="window.location.href='/chatSupport'">
+                    <td><%= i + 1 %></td>
+                    <td><%= data[i].title %></td>
+                    <td><%= data[i].description %></td>
+                </tr>
+        <% } } else { %>
+            <tr>
+                <td colspan="3">Não existem salas de chat criadas.</td>
+            </tr>
+        <% } %>
         </tbody>
     </table>
 </div>
 <%- include('../partials/footer.ejs') %>
 </body>
 </html>
-
-<!-- if(data.length){
-for(var i = 0; i < data.length; ++i) {
-            <button onclick="window.location.href='/chatSupport'">
-                <tr>
-                    <td> data[i].category </td>
-                    <td> data[i].question </td>
-                    <td> data[i].answer </td>
-                </tr>
-            </button>
-         }
-}else{
-            <tr>
-                <td colspan="3">No user</td>
-            </tr>
-         } -->

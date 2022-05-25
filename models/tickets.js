@@ -2,7 +2,7 @@ const mongoose = require('./mongooseConfigs').mongoose;
 
 //Set the schema
 const ticketsSchema = new mongoose.Schema({
-    title: String, description: String, email: String, state: Boolean, date: Date
+    title: String, description: String, answer: String, email: String, state: Boolean, date: Date
 });
 
 //Compile the schema into a models
@@ -16,6 +16,25 @@ function createTicket(ticketData, cb) {
         .catch(err => cb(null, err)); //In this case the callback signature should be changed to include the err parameter
 }
 
+function list(ticketsData, cb) {
+    Tickets.find({ticketsData}, function (err, docs) {
+        cb(docs);
+    });
+}
+
+function findByTitle(ticketsData, cb) {
+    Tickets.findOne({ticketsData}, function (err, doc) {
+        cb(doc);
+    });
+}
+
+function patchTicket (title, ticketData, cb) {
+    //status code 204 should be returned if we don't want to send back the updated model
+    Tickets.findOneAndUpdate({title}, {ticketData}, function (err, doc) {
+        cb(doc);
+    });
+}
+
 module.exports = {
-    createTicket, Tickets
+    createTicket, list, findByTitle, patchTicket, Tickets
 }
